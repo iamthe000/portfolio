@@ -1,9 +1,527 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <title>準備中</title>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梅沢保志 ポートフォリオ | HOSHI PORTFOLIO</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'M PLUS Rounded 1c', 'Noto Serif JP', sans-serif;
+        }
+        .cafe-menu-border {
+            border: 2px dashed #78350f;
+        }
+    </style>
 </head>
-<body>
-  <center><h1>準備中...</h1></center>
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-amber-200">
+
+    <header class="relative h-screen flex flex-col items-center justify-center bg-stone-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('images/hero.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/60 to-transparent"></div>
+        
+        <div class="relative z-10 text-center px-4">
+            <p class="text-xl tracking-widest font-light mb-2 text-amber-400">UMEZAWA HOSHI</p>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">PORTFOLIO</h1>
+            <div class="w-16 h-1 bg-amber-500 mx-auto my-6"></div>
+            <p class="text-lg text-stone-300">大阪府立港南造形高等学校</p>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+            <a href="#about" class="text-amber-400 hover:text-amber-300 flex flex-col items-center gap-1 text-sm tracking-widest">
+                <span>SCROLL</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-4 gap-12">
+        
+        <aside class="lg:col-span-1 lg:sticky lg:top-8 h-fit">
+            <div class="bg-amber-50/60 p-6 rounded-2xl cafe-menu-border shadow-sm">
+                <h2 class="text-2xl font-bold text-amber-900 border-b border-amber-800 pb-2 mb-4 text-center font-serif">保志之珈琲 MENU</h2>
+                <nav class="space-y-1">
+                    <a href="#programming" class="block px-3 py-2.5 rounded-lg hover:bg-amber-100/80 text-stone-700 hover:text-amber-900 transition font-medium">1. プログラミング</a>
+                    <a href="#design" class="block px-3 py-2.5 rounded-lg hover:bg-amber-100/80 text-stone-700 hover:text-amber-900 transition font-medium">2. デザイン</a>
+                    <a href="#oil-painting" class="block px-3 py-2.5 rounded-lg hover:bg-amber-100/80 text-stone-700 hover:text-amber-900 transition font-medium">3. 油絵</a>
+                    <a href="#drawing" class="block px-3 py-2.5 rounded-lg hover:bg-amber-100/80 text-stone-700 hover:text-amber-900 transition font-medium">4. デッサン</a>
+                    <a href="#pottery" class="block px-3 py-2.5 rounded-lg hover:bg-amber-100/80 text-stone-700 hover:text-amber-900 transition font-medium">5. 陶芸</a>
+                    <a href="#cg" class="block px-3 py-2.5 rounded-lg hover:bg-amber-100/80 text-stone-700 hover:text-amber-900 transition font-medium">6. CG</a>
+                    <a href="#outside" class="block px-3 py-2.5 rounded-lg hover:bg-amber-100/80 text-stone-700 hover:text-amber-900 transition font-medium">7. 学校外で描いた絵</a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="lg:col-span-3 space-y-24">
+            
+            <section id="about" class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div class="flex justify-center">
+                    <img src="images/avatar.png" alt="梅沢保志" class="w-40 h-40 rounded-full border-4 border-amber-100 object-cover shadow-inner">
+                </div>
+                <div class="md:col-span-2 space-y-3">
+                    <p class="text-xs font-bold tracking-widest text-amber-700 uppercase">Profile</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-stone-900">梅沢 保志 <span class="text-sm font-normal text-stone-500 ml-2">Umezawa Hoshi</span></h2>
+                    <p class="text-stone-600 text-sm font-serif">大阪府立港南造形高等学校</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm pt-2 text-stone-700">
+                        <div><strong class="text-amber-900">部活:</strong> デザイン, 陶芸</div>
+                        <div><strong class="text-amber-900">選択:</strong> デザイン, 陶芸, 洋画</div>
+                        <div class="sm:col-span-2"><strong class="text-amber-900">趣味:</strong> プログラミング、読書、コーヒー</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="programming" class="space-y-6">
+                <div class="border-l-4 border-amber-700 pl-4">
+                    <h3 class="text-2xl font-bold tracking-tight text-stone-900">1. programming</h3>
+                    <p class="text-xs text-stone-500 mt-1">プログラミング作品</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div onclick="openModal('caffee-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group">
+                        <div class="h-48 bg-stone-100 overflow-hidden relative">
+                            <img src="images/caffee_editor.jpg" alt="CAFFEE Editor" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">Python3 / pypi</span>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-lg text-stone-900">CAFFEE Editor</h4>
+                                <span class="text-xs text-stone-400">2025.11.19</span>
+                            </div>
+                            <p class="text-xs font-semibold text-stone-500">Command Line Text Editor</p>
+                            <p class="text-sm text-stone-600 line-clamp-2">自分が使いたいターミナルのコードエディタがなかったので自分向けに作りました。pypiで実際にリリースし、約二万ダウンロードを記録している自信作です。</p>
+                        </div>
+                    </div>
+
+                    <div onclick="openModal('lit-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group">
+                        <div class="h-48 bg-stone-100 overflow-hidden relative">
+                            <img src="images/lit.jpg" alt="Lit" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">Golang</span>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-lg text-stone-900">Lit</h4>
+                                <span class="text-xs text-stone-400">2026.05.06</span>
+                            </div>
+                            <p class="text-xs font-semibold text-stone-500">Local Version Control Tool</p>
+                            <p class="text-sm text-stone-600 line-clamp-2">Gitという有名なバージョン管理ツールがあるのですが、複数人での共有を前提としており、一人の作業では余計な部分が多すぎると感じ、ローカル版のGitを作れないか、という試みで作ったツールです。</p>
+                        </div>
+                    </div>
+
+                    <div onclick="openModal('ips-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group">
+                        <div class="h-48 bg-stone-100 overflow-hidden relative">
+                            <img src="images/ips_mm.jpg" alt="IPS:MM" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">HTML / JS / CSS</span>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-lg text-stone-900">INFINITY PIXEL STORM : MM</h4>
+                                <span class="text-xs text-stone-400">2025.12.21</span>
+                            </div>
+                            <p class="text-xs font-semibold text-stone-500">Dot Art Shooting Game</p>
+                            <p class="text-sm text-stone-600 line-clamp-2">ドット絵調のシューティングゲームです。僕の詰め込みたいゲーム性やエフェクトを入れれた、自分のしたかったゲームをそのまま形にしたものです！</p>
+                        </div>
+                    </div>
+
+                    <div onclick="openModal('cafezario-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group">
+                        <div class="h-48 bg-stone-100 overflow-hidden relative">
+                            <img src="images/cafezario.jpg" alt="CAFEZARIO" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">HTML / JS / CSS</span>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-lg text-stone-900">CAFEZARIO</h4>
+                                <span class="text-xs text-stone-400">2025</span>
+                            </div>
+                            <p class="text-xs font-semibold text-stone-500">Human vs Slime Game</p>
+                            <p class="text-sm text-stone-600 line-clamp-2">IPS: MMと一部のストーリーを共有している人間vsスライムで戦うゲームです。物語の繋がっている系のゲームを作ってみたくて作りました。</p>
+                        </div>
+                    </div>
+
+                    <div onclick="openModal('milu-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group md:col-span-2">
+                        <div class="h-56 bg-stone-100 overflow-hidden relative">
+                            <img src="images/milu_1.jpg" alt="MILU" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">HTML / JS / CSS</span>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-xl text-stone-900">MILU (ミル)</h4>
+                                <span class="text-xs text-stone-400">2025</span>
+                            </div>
+                            <p class="text-xs font-semibold text-stone-500">Concentration Timer Application</p>
+                            <p class="text-sm text-stone-600">目によるプレッシャーを利用して勉強中の集中を促せるのではないかと思い作ったサービスです。実際友人にも使ってもらったり、自身もこれを使って平均点を上げたり、自分の作るもので人が動いたり変わる喜びを教えてくれたサービスです。初めて本格的にUIやポップアップに本格的にこだわったサービスです。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="design" class="space-y-6">
+                <div class="border-l-4 border-amber-700 pl-4">
+                    <h3 class="text-2xl font-bold tracking-tight text-stone-900">2. design / graphic</h3>
+                    <p class="text-xs text-stone-500 mt-1">グラフィックデザイン作品</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl overflow-hidden border border-stone-200 p-5 space-y-4">
+                        <img src="images/eco_back.jpg" alt="エコの裏側" class="w-full h-64 object-cover rounded-lg">
+                        <div class="space-y-1">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-bold text-lg text-stone-900">エコの裏側（電力はどこから？）</h4>
+                                <span class="text-xs text-stone-400">2025</span>
+                            </div>
+                            <p class="text-xs text-amber-800 font-medium">アクリル絵の具 / B1サイズ</p>
+                            <p class="text-sm text-stone-600 pt-1">自分の作品で人に訴えかけたり、行動をさせたりするのが好きなので、それがやりたくて初めてデザインとして作った作品です。ほかのデザイン部員にくらべて経験も技術も足りなく、焦っていたのが印象に残っています。自分の趣味であるプログラミングとそれに関連させたテーマは初めてのデザインをすごく楽しんで制作する理由をくれました。</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-white p-4 rounded-xl border border-stone-200 flex gap-4 items-center">
+                            <img src="images/serge_exhibition.jpg" alt="セルジュ・ポリアコフ新作展" class="w-24 h-24 object-cover rounded-md shrink-0">
+                            <div>
+                                <h5 class="font-bold text-stone-900 text-sm">セルジュ・ポリアコフ 新作展 ポスターチラシ</h5>
+                                <p class="text-xs text-amber-700">2025 / アクリル絵の具 (22.8×10.1cm)</p>
+                                <p class="text-xs text-stone-600 mt-1 line-clamp-2">授業内で有名作家の新作が見つかった際の新作展のポスターチラシを制作。タイトルや作品をどこに置くかまでがデザインなのだと感じ、苦手なレタリングを練習し始めるきっかけになった作品です。</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-stone-200 flex gap-4 items-center">
+                            <img src="images/tropicana.jpg" alt="Tropicanaパッケージ" class="w-24 h-24 object-cover rounded-md shrink-0">
+                            <div>
+                                <h5 class="font-bold text-stone-900 text-sm">Tropicanaパッケージ</h5>
+                                <p class="text-xs text-amber-700">2025 / アクリル絵の具 (22.8×10.1cm)</p>
+                                <p class="text-xs text-stone-600 mt-1 line-clamp-2">ロゴとポスター中心の制作からパッケージデザインという、日常に溶け込んでいるデザインという新しい視点を与えてくれた授業の制作物です。</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-stone-200 flex gap-4 items-center">
+                            <img src="images/vscode_logo.jpg" alt="VScode ロゴデザイン" class="w-24 h-24 object-cover rounded-md shrink-0">
+                            <div>
+                                <h5 class="font-bold text-stone-900 text-sm">VScode ロゴデザイン</h5>
+                                <p class="text-xs text-amber-700">2025 / アクリル絵の具 (22.8×10.1cm)</p>
+                                <p class="text-xs text-stone-600 mt-1 line-clamp-2">デザインの授業ではいろいろなことを学びましたが、デザインの楽しさそのものや、必要なことを最低限知ったのはこの授業でした。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="oil-painting" class="space-y-6">
+                <div class="border-l-4 border-amber-700 pl-4">
+                    <h3 class="text-2xl font-bold tracking-tight text-stone-900">3. western painting</h3>
+                    <p class="text-xs text-stone-500 mt-1">洋画・油絵作品</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
+                        <img src="images/still_life_1.jpg" alt="静物画その1" class="w-full h-40 object-cover rounded-md">
+                        <h4 class="font-bold text-stone-900 text-sm">静物画その1</h4>
+                        <p class="text-xs text-stone-400">2025 / 油絵具 (22.8×10.1cm)</p>
+                        <p class="text-xs text-stone-600 line-clamp-3">洋画の授業で最初に描いた作品。キャンバスに色を乗せるだけで精一杯で、置いているものの影を表現できず悔しかった記憶が残る作品です。</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
+                        <img src="images/snow_mountain.jpg" alt="雪山を超えると..." class="w-full h-40 object-cover rounded-md">
+                        <h4 class="font-bold text-stone-900 text-sm">雪山を超えると...</h4>
+                        <p class="text-xs text-stone-400">2025 / 油絵具 (22.8×10.1cm)</p>
+                        <p class="text-xs text-stone-600 line-clamp-3">シュールレアリスムの授業で描いたもの。好きなものや日常で見るものを絵の中で再現したく、休み時間も制作に充てました。作品に愛を持って制作することを学びました。</p>
+                    </div>
+                    <div onclick="openModal('life-modal')" class="bg-white p-4 rounded-xl border border-amber-200 bg-amber-50/20 space-y-2 cursor-pointer hover:shadow-sm transition">
+                        <img src="images/life_abstract.jpg" alt="Life" class="w-full h-40 object-cover rounded-md">
+                        <div class="flex justify-between items-center">
+                            <h4 class="font-bold text-stone-900 text-sm">Life</h4>
+                            <span class="bg-amber-800 text-white text-[10px] px-1.5 py-0.5 rounded font-bold">詳細あり</span>
+                        </div>
+                        <p class="text-xs text-stone-400">2026 / 油絵具, 厚紙, キーキャップ</p>
+                        <p class="text-xs text-stone-600 line-clamp-3">二年生の最後の授業で、日常生活をテーマに描いた抽象画。趣味・学校・内面の領域を表現し、厚紙を用いた切断や立体物を融合させました。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="drawing" class="space-y-6">
+                <div class="border-l-4 border-amber-700 pl-4">
+                    <h3 class="text-2xl font-bold tracking-tight text-stone-900">4. drawing</h3>
+                    <p class="text-xs text-stone-500 mt-1">デッサン</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-3 rounded-xl border border-stone-200 text-center space-y-2">
+                        <img src="images/dessin_3y.jpg" alt="三年生 デッサン" class="w-full h-48 object-cover rounded-md">
+                        <p class="text-xs font-bold text-stone-800">三年生 デッサン</p>
+                        <p class="text-[10px] text-stone-400">2026 / 鉛筆, 練り消し<br>380×540mm</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-stone-200 text-center space-y-2">
+                        <img src="images/dessin_2y_1.jpg" alt="二年生 デッサン 1" class="w-full h-48 object-cover rounded-md">
+                        <p class="text-xs font-bold text-stone-800">二年生 デッサン</p>
+                        <p class="text-[10px] text-stone-400">2025 / 鉛筆, 練り消し<br>380×540mm</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-stone-200 text-center space-y-2">
+                        <img src="images/dessin_2y_2.jpg" alt="二年生 デッサン 2" class="w-full h-48 object-cover rounded-md">
+                        <p class="text-xs font-bold text-stone-800">二年生 デッサン</p>
+                        <p class="text-[10px] text-stone-400">2025 / 鉛筆, 練り消し, 水彩<br>380×540mm</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-stone-200 text-center space-y-2">
+                        <img src="images/dessin_1y.jpg" alt="一年生 デッサン" class="w-full h-48 object-cover rounded-md">
+                        <p class="text-xs font-bold text-stone-800">一年生 デッサン</p>
+                        <p class="text-[10px] text-stone-400">2024 / 鉛筆, 練り消し<br>380×540mm</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pottery" class="space-y-6">
+                <div class="border-l-4 border-amber-700 pl-4">
+                    <h3 class="text-2xl font-bold tracking-tight text-stone-900">5. pottery</h3>
+                    <p class="text-xs text-stone-500 mt-1">陶芸作品</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
+                        <img src="images/pottery_cuphouse.jpg" alt="カップハウス" class="w-full h-44 object-cover rounded-md">
+                        <h4 class="font-bold text-stone-900 text-sm">カップハウス</h4>
+                        <p class="text-xs text-amber-800 font-medium">2025 / 白鳳, 黒天目</p>
+                        <p class="text-xs text-stone-500 font-serif">大阪府高等学校芸術文化祭 出品</p>
+                        <p class="text-xs text-stone-600 pt-1">高校展の反省を生かし、事前に細かく形を決め、複数の釉薬を初めて使用した作品です。蓋つきの作品を作るという挑戦をした作品でもあります。</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
+                        <img src="images/pottery_hashitate.jpg" alt="箸立て" class="w-full h-44 object-cover rounded-md">
+                        <h4 class="font-bold text-stone-900 text-sm">箸立て</h4>
+                        <p class="text-xs text-amber-800 font-medium">2025 / 白鳳</p>
+                        <p class="text-xs text-stone-500 font-serif">大阪府高等学校美術・工芸展 出品</p>
+                        <p class="text-xs text-stone-600 pt-1">陶芸部が未発達な中、実用的なものを作りたいと考えた成果物。放課後に誰よりも失敗して作品を潰した末に生まれた、未熟ながらに最も思い入れのある作品です。</p>
+                    </div>
+                    <div onclick="openModal('pottery-modal')" class="bg-white p-4 rounded-xl border border-amber-200 bg-amber-50/20 space-y-2 cursor-pointer hover:shadow-sm transition">
+                        <img src="images/pottery_kobito.jpg" alt="小人の家には" class="w-full h-44 object-cover rounded-md">
+                        <div class="flex justify-between items-center">
+                            <h4 class="font-bold text-stone-900 text-sm">小人の家には</h4>
+                            <span class="bg-amber-800 text-white text-[10px] px-1.5 py-0.5 rounded font-bold">詳細あり</span>
+                        </div>
+                        <p class="text-xs text-amber-800 font-medium">2025 / 白鳳, 黒天目</p>
+                        <p class="text-xs text-stone-500 font-serif">大阪府高等学校美術・工芸展 出品</p>
+                        <p class="text-xs text-stone-600 pt-1 line-clamp-3">1年生の時のカップハウスのリベンジとして制作。何度もレンガの表現や釉薬の違いを調べ、陶芸部としての最後の作品として非常に満足のいく十分な制作ができました。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cg" class="space-y-6">
+                <div class="border-l-4 border-amber-700 pl-4">
+                    <h3 class="text-2xl font-bold tracking-tight text-stone-900">6. CG</h3>
+                    <p class="text-xs text-stone-500 mt-1">computer graphics (Blender)</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
+                        <img src="images/cg_hoshi.jpg" alt="HOSHI" class="w-full h-52 object-cover rounded-md">
+                        <h4 class="font-bold text-stone-900">HOSHI</h4>
+                        <p class="text-xs text-stone-400">2026</p>
+                        <p class="text-sm text-stone-600">CGソフトのBlenderで2D的な表現ができないかと考え作ったものです。</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
+                        <img src="images/cg_airplane.jpg" alt="ヒコーキ" class="w-full h-52 object-cover rounded-md">
+                        <h4 class="font-bold text-stone-900">ヒコーキ</h4>
+                        <p class="text-xs text-stone-400">2026</p>
+                        <p class="text-sm text-stone-600">せっかくなら映像もCGで作ってみようと思って作りました。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="outside" class="space-y-6">
+                <div class="border-l-4 border-amber-700 pl-4">
+                    <h3 class="text-2xl font-bold tracking-tight text-stone-900">7. 学校外で描いた絵</h3>
+                    <p class="text-xs text-stone-500 mt-1">個人の制作・絵画</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-3">
+                        <img src="images/outside_fox_1.jpg" alt="狐" class="w-full h-52 object-cover rounded-md">
+                        <div>
+                            <h4 class="font-bold text-stone-900 text-sm">狐</h4>
+                            <p class="text-xs text-stone-400">2024.06.15 / ACRYLIC F0</p>
+                            <p class="text-xs text-stone-600 mt-1">筆の流れで毛並みの動きや、命としての儚さ、感覚的な時間の流れを表現できるのではないかと個人的に考えて試みた作品です。自分の中では成功したと考えており、すごく気に入っています。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-3">
+                        <img src="images/outside_beach.jpg" alt="海岸と空" class="w-full h-52 object-cover rounded-md">
+                        <div>
+                            <h4 class="font-bold text-stone-900 text-sm">海岸と空</h4>
+                            <p class="text-xs text-stone-400">2024.08.21 / ACRYLIC 10cm×7.5cm</p>
+                            <p class="text-xs text-stone-600 mt-1">狐と猫の絵で試した表現を波でやってみようという絵です。ここから「存在しない空と地と海の風景の記憶」という形式に魅力を感じるようになり、その後の描きたい絵の構成が大きく定まりました。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-3">
+                        <img src="images/outside_bridge.jpg" alt="橋の先には" class="w-full h-52 object-cover rounded-md">
+                        <div>
+                            <h4 class="font-bold text-stone-900 text-sm">橋の先には</h4>
+                            <p class="text-xs text-stone-400">ACRYLIC</p>
+                            <p class="text-xs text-stone-600 mt-1">ポートフォリオ全体のビジュアルを象徴する、奥へと広がるダイナミックな世界観を描いた作品です。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="bg-stone-950 text-stone-400 py-8 text-center text-xs tracking-wider border-t border-stone-900 mt-24">
+        <p>&copy; 2026 梅沢保志 | 大阪府立港南造形高等学校 ポートフォリオ</p>
+        <p class="text-stone-600 mt-1">Thank You</p>
+    </footer>
+
+
+    <div id="caffee-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 space-y-4 shadow-xl border border-stone-200">
+            <div class="flex justify-between items-start border-b border-stone-100 pb-3">
+                <div>
+                    <h3 class="text-2xl font-bold text-stone-900">CAFFEE Editor</h3>
+                    <p class="text-xs text-amber-800 font-semibold mt-0.5">Command Line Text Editor</p>
+                </div>
+                <button onclick="closeModal('caffee-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
+            </div>
+            <img src="images/caffee_editor.jpg" alt="CAFFEE Editor" class="w-full h-64 object-cover rounded-xl">
+            <div class="flex flex-wrap gap-2 text-xs">
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">Python3</span>
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">pypi リリース</span>
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">約2万DL記録</span>
+                <span class="bg-amber-100 text-amber-900 px-2 py-1 rounded font-bold">2025年11月19日</span>
+            </div>
+            <p class="text-sm text-stone-700 leading-relaxed">自分が使いたいターミナルのコードエディタがなかったので自分向けに作りました。pypiで実際にリリースし、約二万ダウンロードを記録している自信作です。</p>
+        </div>
+    </div>
+
+    <div id="lit-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 space-y-4 shadow-xl border border-stone-200">
+            <div class="flex justify-between items-start border-b border-stone-100 pb-3">
+                <div>
+                    <h3 class="text-2xl font-bold text-stone-900">Lit</h3>
+                    <p class="text-xs text-amber-800 font-semibold mt-0.5">Local Version Control Tool</p>
+                </div>
+                <button onclick="closeModal('lit-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
+            </div>
+            <img src="images/lit.jpg" alt="Lit" class="w-full h-64 object-cover rounded-xl">
+            <div class="flex flex-wrap gap-2 text-xs">
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">Golang</span>
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">io, os, path/filepath</span>
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">encoding/json, crypto/sha256</span>
+                <span class="bg-amber-100 text-amber-900 px-2 py-1 rounded font-bold">2026年5月6日</span>
+            </div>
+            <div class="bg-stone-900 text-green-400 p-4 rounded-lg font-mono text-xs space-y-1 shadow-inner">
+                <p class="text-stone-500">// Usage Examples:</p>
+                <p>lit init [-max &lt;n&gt;] <span class="text-stone-500"># Initialize directory</span></p>
+                <p>lit commit -m "&lt;msg&gt;" <span class="text-stone-500"># Save states</span></p>
+                <p>lit log <span class="text-stone-500"># Show history</span></p>
+            </div>
+            <p class="text-sm text-stone-700 leading-relaxed">Gitという有名なバージョン管理ツールがあるのですが、複数人での共有を前提としており、一人の作業では余計な部分が多すぎると感じ、ローカル版のGitを作れないか、という試みで作ったツールです。</p>
+        </div>
+    </div>
+
+    <div id="ips-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 space-y-4 shadow-xl border border-stone-200">
+            <div class="flex justify-between items-start border-b border-stone-100 pb-3">
+                <div>
+                    <h3 class="text-2xl font-bold text-stone-900">INFINITY PIXEL STORM : MM</h3>
+                    <p class="text-xs text-amber-800 font-semibold mt-0.5">MONOCHROME MENACE</p>
+                </div>
+                <button onclick="closeModal('ips-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
+            </div>
+            <img src="images/ips_mm.jpg" alt="IPS:MM" class="w-full h-64 object-cover rounded-xl">
+            <div class="flex flex-wrap gap-2 text-xs">
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">HTML5</span>
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">JavaScript</span>
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">CSSエフェクト</span>
+                <span class="bg-amber-100 text-amber-900 px-2 py-1 rounded font-bold">2025年12月21日</span>
+            </div>
+            <p class="text-sm text-stone-700 leading-relaxed">ドット絵調のシューティングゲームです。僕の詰め込みたいゲーム性やエフェクトを入れれた、自分のしたかったゲームをそのまま形にしたものです！</p>
+        </div>
+    </div>
+
+    <div id="cafezario-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 space-y-4 shadow-xl border border-stone-200">
+            <div class="flex justify-between items-start border-b border-stone-100 pb-3">
+                <div>
+                    <h3 class="text-2xl font-bold text-stone-900">CAFEZARIO</h3>
+                </div>
+                <button onclick="closeModal('cafezario-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
+            </div>
+            <img src="images/cafezario.jpg" alt="CAFEZARIO" class="w-full h-64 object-cover rounded-xl">
+            <div class="flex flex-wrap gap-2 text-xs">
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">HTML</span>
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">JavaScript</span>
+                <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">CSS</span>
+                <span class="bg-amber-100 text-amber-900 px-2 py-1 rounded font-bold">2025年</span>
+            </div>
+            <p class="text-sm text-stone-700 leading-relaxed">IPS: MMと一部のストーリーを共有している人間vsスライムで戦うゲームです。物語の繋がっている系のゲームを作ってみたくて作りました。</p>
+        </div>
+    </div>
+
+    <div id="milu-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 space-y-6 shadow-xl border border-stone-200">
+            <div class="flex justify-between items-start border-b border-stone-100 pb-3">
+                <div>
+                    <h3 class="text-2xl font-bold text-stone-900">MILU (ミル)</h3>
+                    <p class="text-xs text-amber-800 font-semibold mt-0.5">目によるプレッシャー集中タイマー</p>
+                </div>
+                <button onclick="closeModal('milu-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <img src="images/milu_1.jpg" alt="MILUメイン" class="w-full h-40 object-cover rounded-lg border border-stone-200">
+                <img src="images/milu_2.jpg" alt="MILUモーダル" class="w-full h-40 object-cover rounded-lg border border-stone-200">
+                <img src="images/milu_3.jpg" alt="MILU表情変化" class="w-full h-40 object-cover rounded-lg border border-stone-200">
+            </div>
+
+            <div class="space-y-4 text-sm text-stone-700 leading-relaxed">
+                <p>目によるプレッシャーを利用して勉強中の集中を促せるのではないかと思い作ったサービスです。実際友人にも使ってもらったり、自身もこれを使って平均点を上げたり、自分の作るもので人が動いたり変わる喜びを教えてくれたサービスです。初めて本格的にUIやポップアップに本格的にこだわったサービスです。</p>
+                
+                <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 space-y-2 text-xs text-amber-900">
+                    <h4 class="font-bold text-sm">💡 UIと表示のこだわりポイント</h4>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>モーダルの中の文は文節ごとに登録し、単語の途中などで中途半端な地点で改行されないように工夫。</li>
+                        <li>OS標準のモーダルは使わず、アプリ全体の雰囲気を守るために独自実装。</li>
+                        <li>別のアプリ（タブ）を開いて戻ってくると、「何してたの？」とmiluに叱られる仕組み。表情や背景色が変化します。</li>
+                        <li>ハードモードでは勉強時間が自動的に二分ほどペナルティ追加されるストイック仕様。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="life-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 space-y-4 shadow-xl border border-stone-200">
+            <div class="flex justify-between items-start border-b border-stone-100 pb-3">
+                <div>
+                    <h3 class="text-2xl font-bold text-stone-900">Life</h3>
+                    <p class="text-xs text-amber-800 font-semibold mt-0.5">2年生洋画授業 最終制作</p>
+                </div>
+                <button onclick="closeModal('life-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <img src="images/life_abstract.jpg" alt="Life 抽象画全体" class="w-full h-48 object-cover rounded-lg">
+                <img src="images/life_detail.jpg" alt="Life ディテール" class="w-full h-48 object-cover rounded-lg">
+            </div>
+            <p class="text-xs text-amber-800 font-medium">2026 / 油絵具, 厚紙, キーキャップ (S15サイズ)</p>
+            <p class="text-sm text-stone-700 leading-relaxed">日常生活をテーマに抽象画の制作を二年生洋画の授業最後にしました。「趣味」「学校」「内面」の領域をそれぞれ表現し、厚紙を用いた画面内の切断と、キーキャップなどの立体物を抽象画の中にボンドで取り込む発想を組み込みました。指導教員や友人などから褒められ、二年生最後にとても満足のいくものが作れた思い出深い作品です。</p>
+        </div>
+    </div>
+
+    <div id="pottery-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 space-y-4 shadow-xl border border-stone-200">
+            <div class="flex justify-between items-start border-b border-stone-100 pb-3">
+                <div>
+                    <h3 class="text-2xl font-bold text-stone-900">小人の家には</h3>
+                    <p class="text-xs text-amber-800 font-semibold mt-0.5">大阪府高等学校美術・工芸展 出品作品</p>
+                </div>
+                <button onclick="closeModal('pottery-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <img src="images/pottery_kobito.jpg" alt="小人の家には 全体" class="w-full h-48 object-cover rounded-lg">
+                <img src="images/pottery_kobito_detail.jpg" alt="制作中・拡大の様子" class="w-full h-48 object-cover rounded-lg">
+            </div>
+            <p class="text-xs text-amber-800 font-medium">2025 / 白鳳, 黒天目</p>
+            <p class="text-sm text-stone-700 leading-relaxed">一年生の時のカップハウスが満足できず、それのリベンジとして作ったものです。何度もレンガの表現や、釉薬の違いを調べ、自分にできる表現を試し続けた作品です。陶芸部として最後の作品にしようと決意していた中で、十分な制作ができて非常に満足できました。窓をのぞき込むと、中で手を振る小人が表現されています。</p>
+        </div>
+    </div>
+
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';}
+        function closeModal(id) {document.getElementById(id).classList.add('hidden');
+            document.body.style.overflow = 'auto';}
+        window.onclick = function(event) {
+            if (event.target.classList.contains('fixed')) {event.target.classList.add('hidden');
+                document.body.style.overflow = 'auto';}
+        }
+    </script>
 </body>
+</html>
