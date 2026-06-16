@@ -59,7 +59,7 @@
             
             <section id="about" class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                 <div class="flex justify-center">
-                    <img src="images/avatar.png" alt="梅沢保志" class="w-40 h-40 rounded-full border-4 border-amber-100 object-cover shadow-inner">
+                    <img src="images/avatar.png" alt="梅沢保志" class="w-40 h-40 rounded-full border-4 border-amber-100 object-contain shadow-inner bg-stone-100">
                 </div>
                 <div class="md:col-span-2 space-y-3">
                     <p class="text-xs font-bold tracking-widest text-amber-700 uppercase">Profile</p>
@@ -80,8 +80,8 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div onclick="openModal('caffee-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group">
-                        <div class="h-48 bg-stone-100 overflow-hidden relative">
-                            <img src="images/caffee_editor.jpg" alt="CAFFEE Editor" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="h-48 bg-stone-100 overflow-hidden relative flex items-center justify-center">
+                            <img src="images/caffee_editor.jpg" alt="CAFFEE Editor" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
                             <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">Python3 / pypi</span>
                         </div>
                         <div class="p-5 space-y-2">
@@ -95,8 +95,8 @@
                     </div>
 
                     <div onclick="openModal('lit-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group">
-                        <div class="h-48 bg-stone-100 overflow-hidden relative">
-                            <img src="images/lit.jpg" alt="Lit" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="h-48 bg-stone-100 overflow-hidden relative flex items-center justify-center">
+                            <img src="images/lit.jpg" alt="Lit" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
                             <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">Golang</span>
                         </div>
                         <div class="p-5 space-y-2">
@@ -110,8 +110,8 @@
                     </div>
 
                     <div onclick="openModal('ips-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group">
-                        <div class="h-48 bg-stone-100 overflow-hidden relative">
-                            <img src="images/ips_mm.jpg" alt="IPS:MM" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="h-48 bg-stone-100 overflow-hidden relative flex items-center justify-center">
+                            <img src="images/ips_mm.jpg" alt="IPS:MM" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
                             <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">HTML / JS / CSS</span>
                         </div>
                         <div class="p-5 space-y-2">
@@ -125,8 +125,8 @@
                     </div>
 
                     <div onclick="openModal('cafezario-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group">
-                        <div class="h-48 bg-stone-100 overflow-hidden relative">
-                            <img src="images/cafezario.jpg" alt="CAFEZARIO" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="h-48 bg-stone-100 overflow-hidden relative flex items-center justify-center">
+                            <img src="images/cafezario.jpg" alt="CAFEZARIO" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
                             <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">HTML / JS / CSS</span>
                         </div>
                         <div class="p-5 space-y-2">
@@ -140,8 +140,8 @@
                     </div>
 
                     <div onclick="openModal('milu-modal')" class="bg-white rounded-xl overflow-hidden border border-stone-200 hover:shadow-md transition cursor-pointer group md:col-span-2">
-                        <div class="h-56 bg-stone-100 overflow-hidden relative">
-                            <img src="images/milu_1.jpg" alt="MILU" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="h-56 bg-stone-100 overflow-hidden relative flex items-center justify-center">
+                            <img src="images/milu_1.jpg" alt="MILU" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
                             <span class="absolute top-3 right-3 bg-amber-800 text-white text-xs px-2.5 py-1 rounded-full font-bold">HTML / JS / CSS</span>
                         </div>
                         <div class="p-5 space-y-2">
@@ -163,7 +163,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-white rounded-xl overflow-hidden border border-stone-200 p-5 space-y-4">
-                        <img src="images/eco_back.jpg" alt="エコの裏側" class="w-full h-64 object-cover rounded-lg">
+                        <img src="images/eco_back.jpg" alt="エコの裏側" class="w-full h-64 object-contain rounded-lg bg-stone-100">
                         <div class="space-y-1">
                             <div class="flex justify-between items-center">
                                 <h4 class="font-bold text-lg text-stone-900">エコの裏側（電力はどこから？）</h4>
@@ -176,7 +176,7 @@
 
                     <div class="grid grid-cols-1 gap-4">
                         <div class="bg-white p-4 rounded-xl border border-stone-200 flex gap-4 items-center">
-                            <img src="images/serge_exhibition.jpg" alt="セルジュ・ポリアコフ新作展" class="w-24 h-24 object-cover rounded-md shrink-0">
+                            <img src="images/serge_exhibition.jpg" alt="セルジュ・ポリアコフ新作展" class="w-24 h-24 object-contain rounded-md shrink-0 bg-stone-100">
                             <div>
                                 <h5 class="font-bold text-stone-900 text-sm">セルジュ・ポリアコフ 新作展 ポスターチラシ</h5>
                                 <p class="text-xs text-amber-700">2025 / アクリル絵の具 (22.8×10.1cm)</p>
@@ -184,7 +184,7 @@
                             </div>
                         </div>
                         <div class="bg-white p-4 rounded-xl border border-stone-200 flex gap-4 items-center">
-                            <img src="images/tropicana.jpg" alt="Tropicanaパッケージ" class="w-24 h-24 object-cover rounded-md shrink-0">
+                            <img src="images/tropicana.jpg" alt="Tropicanaパッケージ" class="w-24 h-24 object-contain rounded-md shrink-0 bg-stone-100">
                             <div>
                                 <h5 class="font-bold text-stone-900 text-sm">Tropicanaパッケージ</h5>
                                 <p class="text-xs text-amber-700">2025 / アクリル絵の具 (22.8×10.1cm)</p>
@@ -192,7 +192,7 @@
                             </div>
                         </div>
                         <div class="bg-white p-4 rounded-xl border border-stone-200 flex gap-4 items-center">
-                            <img src="images/vscode_logo.jpg" alt="VScode ロゴデザイン" class="w-24 h-24 object-cover rounded-md shrink-0">
+                            <img src="images/vscode_logo.jpg" alt="VScode ロゴデザイン" class="w-24 h-24 object-contain rounded-md shrink-0 bg-stone-100">
                             <div>
                                 <h5 class="font-bold text-stone-900 text-sm">VScode ロゴデザイン</h5>
                                 <p class="text-xs text-amber-700">2025 / アクリル絵の具 (22.8×10.1cm)</p>
@@ -210,19 +210,19 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
-                        <img src="images/still_life_1.jpg" alt="静物画その1" class="w-full h-40 object-cover rounded-md">
+                        <img src="images/still_life_1.jpg" alt="静物画その1" class="w-full h-40 object-contain rounded-md bg-stone-100">
                         <h4 class="font-bold text-stone-900 text-sm">静物画その1</h4>
                         <p class="text-xs text-stone-400">2025 / 油絵具 (22.8×10.1cm)</p>
                         <p class="text-xs text-stone-600 line-clamp-3">洋画の授業で最初に描いた作品。キャンバスに色を乗せるだけで精一杯で、置いているものの影を表現できず悔しかった記憶が残る作品です。</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
-                        <img src="images/snow_mountain.jpg" alt="雪山を超えると..." class="w-full h-40 object-cover rounded-md">
+                        <img src="images/snow_mountain.jpg" alt="雪山を超えると..." class="w-full h-40 object-contain rounded-md bg-stone-100">
                         <h4 class="font-bold text-stone-900 text-sm">雪山を超えると...</h4>
                         <p class="text-xs text-stone-400">2025 / 油絵具 (22.8×10.1cm)</p>
                         <p class="text-xs text-stone-600 line-clamp-3">シュールレアリスムの授業で描いたもの。好きなものや日常で見るものを絵の中で再現したく、休み時間も制作に充てました。作品に愛を持って制作することを学びました。</p>
                     </div>
                     <div onclick="openModal('life-modal')" class="bg-white p-4 rounded-xl border border-amber-200 bg-amber-50/20 space-y-2 cursor-pointer hover:shadow-sm transition">
-                        <img src="images/life_abstract.jpg" alt="Life" class="w-full h-40 object-cover rounded-md">
+                        <img src="images/life_abstract.jpg" alt="Life" class="w-full h-40 object-contain rounded-md bg-stone-100">
                         <div class="flex justify-between items-center">
                             <h4 class="font-bold text-stone-900 text-sm">Life</h4>
                             <span class="bg-amber-800 text-white text-[10px] px-1.5 py-0.5 rounded font-bold">詳細あり</span>
@@ -240,22 +240,22 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="bg-white p-3 rounded-xl border border-stone-200 text-center space-y-2">
-                        <img src="images/dessin_3y.jpg" alt="三年生 デッサン" class="w-full h-48 object-cover rounded-md">
+                        <img src="images/dessin_3y.jpg" alt="三年生 デッサン" class="w-full h-48 object-contain rounded-md bg-stone-100">
                         <p class="text-xs font-bold text-stone-800">三年生 デッサン</p>
                         <p class="text-[10px] text-stone-400">2026 / 鉛筆, 練り消し<br>380×540mm</p>
                     </div>
                     <div class="bg-white p-3 rounded-xl border border-stone-200 text-center space-y-2">
-                        <img src="images/dessin_2y_1.jpg" alt="二年生 デッサン 1" class="w-full h-48 object-cover rounded-md">
+                        <img src="images/dessin_2y_1.jpg" alt="二年生 デッサン 1" class="w-full h-48 object-contain rounded-md bg-stone-100">
                         <p class="text-xs font-bold text-stone-800">二年生 デッサン</p>
                         <p class="text-[10px] text-stone-400">2025 / 鉛筆, 練り消し<br>380×540mm</p>
                     </div>
                     <div class="bg-white p-3 rounded-xl border border-stone-200 text-center space-y-2">
-                        <img src="images/dessin_2y_2.jpg" alt="二年生 デッサン 2" class="w-full h-48 object-cover rounded-md">
+                        <img src="images/dessin_2y_2.jpg" alt="二年生 デッサン 2" class="w-full h-48 object-contain rounded-md bg-stone-100">
                         <p class="text-xs font-bold text-stone-800">二年生 デッサン</p>
                         <p class="text-[10px] text-stone-400">2025 / 鉛筆, 練り消し, 水彩<br>380×540mm</p>
                     </div>
                     <div class="bg-white p-3 rounded-xl border border-stone-200 text-center space-y-2">
-                        <img src="images/dessin_1y.jpg" alt="一年生 デッサン" class="w-full h-48 object-cover rounded-md">
+                        <img src="images/dessin_1y.jpg" alt="一年生 デッサン" class="w-full h-48 object-contain rounded-md bg-stone-100">
                         <p class="text-xs font-bold text-stone-800">一年生 デッサン</p>
                         <p class="text-[10px] text-stone-400">2024 / 鉛筆, 練り消し<br>380×540mm</p>
                     </div>
@@ -269,21 +269,21 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
-                        <img src="images/pottery_cuphouse.jpg" alt="カップハウス" class="w-full h-44 object-cover rounded-md">
+                        <img src="images/pottery_cuphouse.jpg" alt="カップハウス" class="w-full h-44 object-contain rounded-md bg-stone-100">
                         <h4 class="font-bold text-stone-900 text-sm">カップハウス</h4>
                         <p class="text-xs text-amber-800 font-medium">2025 / 白鳳, 黒天目</p>
                         <p class="text-xs text-stone-500 font-serif">大阪府高等学校芸術文化祭 出品</p>
                         <p class="text-xs text-stone-600 pt-1">高校展の反省を生かし、事前に細かく形を決め、複数の釉薬を初めて使用した作品です。蓋つきの作品を作るという挑戦をした作品でもあります。</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
-                        <img src="images/pottery_hashitate.jpg" alt="箸立て" class="w-full h-44 object-cover rounded-md">
+                        <img src="images/pottery_hashitate.jpg" alt="箸立て" class="w-full h-44 object-contain rounded-md bg-stone-100">
                         <h4 class="font-bold text-stone-900 text-sm">箸立て</h4>
                         <p class="text-xs text-amber-800 font-medium">2025 / 白鳳</p>
                         <p class="text-xs text-stone-500 font-serif">大阪府高等学校美術・工芸展 出品</p>
                         <p class="text-xs text-stone-600 pt-1">陶芸部が未発達な中、実用的なものを作りたいと考えた成果物。放課後に誰よりも失敗して作品を潰した末に生まれた、未熟ながらに最も思い入れのある作品です。</p>
                     </div>
                     <div onclick="openModal('pottery-modal')" class="bg-white p-4 rounded-xl border border-amber-200 bg-amber-50/20 space-y-2 cursor-pointer hover:shadow-sm transition">
-                        <img src="images/pottery_kobito.jpg" alt="小人の家には" class="w-full h-44 object-cover rounded-md">
+                        <img src="images/pottery_kobito.jpg" alt="小人の家には" class="w-full h-44 object-contain rounded-md bg-stone-100">
                         <div class="flex justify-between items-center">
                             <h4 class="font-bold text-stone-900 text-sm">小人の家には</h4>
                             <span class="bg-amber-800 text-white text-[10px] px-1.5 py-0.5 rounded font-bold">詳細あり</span>
@@ -302,13 +302,13 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
-                        <img src="images/cg_hoshi.jpg" alt="HOSHI" class="w-full h-52 object-cover rounded-md">
+                        <img src="images/cg_hoshi.jpg" alt="HOSHI" class="w-full h-52 object-contain rounded-md bg-stone-100">
                         <h4 class="font-bold text-stone-900">HOSHI</h4>
                         <p class="text-xs text-stone-400">2026</p>
                         <p class="text-sm text-stone-600">CGソフトのBlenderで2D的な表現ができないかと考え作ったものです。</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2">
-                        <img src="images/cg_airplane.jpg" alt="ヒコーキ" class="w-full h-52 object-cover rounded-md">
+                        <img src="images/cg_airplane.jpg" alt="ヒコーキ" class="w-full h-52 object-contain rounded-md bg-stone-100">
                         <h4 class="font-bold text-stone-900">ヒコーキ</h4>
                         <p class="text-xs text-stone-400">2026</p>
                         <p class="text-sm text-stone-600">せっかくなら映像もCGで作ってみようと思って作りました。</p>
@@ -323,7 +323,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-3">
-                        <img src="images/outside_fox_1.jpg" alt="狐" class="w-full h-52 object-cover rounded-md">
+                        <img src="images/outside_fox_1.jpg" alt="狐" class="w-full h-52 object-contain rounded-md bg-stone-100">
                         <div>
                             <h4 class="font-bold text-stone-900 text-sm">狐</h4>
                             <p class="text-xs text-stone-400">2024.06.15 / ACRYLIC F0</p>
@@ -331,7 +331,7 @@
                         </div>
                     </div>
                     <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-3">
-                        <img src="images/outside_beach.jpg" alt="海岸と空" class="w-full h-52 object-cover rounded-md">
+                        <img src="images/outside_beach.jpg" alt="海岸と空" class="w-full h-52 object-contain rounded-md bg-stone-100">
                         <div>
                             <h4 class="font-bold text-stone-900 text-sm">海岸と空</h4>
                             <p class="text-xs text-stone-400">2024.08.21 / ACRYLIC 10cm×7.5cm</p>
@@ -339,7 +339,7 @@
                         </div>
                     </div>
                     <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-3">
-                        <img src="images/outside_bridge.jpg" alt="橋の先には" class="w-full h-52 object-cover rounded-md">
+                        <img src="images/outside_bridge.jpg" alt="橋の先には" class="w-full h-52 object-contain rounded-md bg-stone-100">
                         <div>
                             <h4 class="font-bold text-stone-900 text-sm">橋の先には</h4>
                             <p class="text-xs text-stone-400">ACRYLIC</p>
@@ -367,7 +367,7 @@
                 </div>
                 <button onclick="closeModal('caffee-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
             </div>
-            <img src="images/caffee_editor.jpg" alt="CAFFEE Editor" class="w-full h-64 object-cover rounded-xl">
+            <img src="images/caffee_editor.jpg" alt="CAFFEE Editor" class="w-full h-64 object-contain rounded-xl bg-stone-100">
             <div class="flex flex-wrap gap-2 text-xs">
                 <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">Python3</span>
                 <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">pypi リリース</span>
@@ -387,7 +387,7 @@
                 </div>
                 <button onclick="closeModal('lit-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
             </div>
-            <img src="images/lit.jpg" alt="Lit" class="w-full h-64 object-cover rounded-xl">
+            <img src="images/lit.jpg" alt="Lit" class="w-full h-64 object-contain rounded-xl bg-stone-100">
             <div class="flex flex-wrap gap-2 text-xs">
                 <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">Golang</span>
                 <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">io, os, path/filepath</span>
@@ -413,7 +413,7 @@
                 </div>
                 <button onclick="closeModal('ips-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
             </div>
-            <img src="images/ips_mm.jpg" alt="IPS:MM" class="w-full h-64 object-cover rounded-xl">
+            <img src="images/ips_mm.jpg" alt="IPS:MM" class="w-full h-64 object-contain rounded-xl bg-stone-100">
             <div class="flex flex-wrap gap-2 text-xs">
                 <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">HTML5</span>
                 <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">JavaScript</span>
@@ -432,7 +432,7 @@
                 </div>
                 <button onclick="closeModal('cafezario-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
             </div>
-            <img src="images/cafezario.jpg" alt="CAFEZARIO" class="w-full h-64 object-cover rounded-xl">
+            <img src="images/cafezario.jpg" alt="CAFEZARIO" class="w-full h-64 object-contain rounded-xl bg-stone-100">
             <div class="flex flex-wrap gap-2 text-xs">
                 <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">HTML</span>
                 <span class="bg-stone-100 px-2 py-1 rounded text-stone-600 font-medium">JavaScript</span>
@@ -454,9 +454,9 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <img src="images/milu_1.jpg" alt="MILUメイン" class="w-full h-40 object-cover rounded-lg border border-stone-200">
-                <img src="images/milu_2.jpg" alt="MILUモーダル" class="w-full h-40 object-cover rounded-lg border border-stone-200">
-                <img src="images/milu_3.jpg" alt="MILU表情変化" class="w-full h-40 object-cover rounded-lg border border-stone-200">
+                <img src="images/milu_1.jpg" alt="MILUメイン" class="w-full h-40 object-contain rounded-lg border border-stone-200 bg-stone-100">
+                <img src="images/milu_2.jpg" alt="MILUモーダル" class="w-full h-40 object-contain rounded-lg border border-stone-200 bg-stone-100">
+                <img src="images/milu_3.jpg" alt="MILU表情変化" class="w-full h-40 object-contain rounded-lg border border-stone-200 bg-stone-100">
             </div>
 
             <div class="space-y-4 text-sm text-stone-700 leading-relaxed">
@@ -485,8 +485,8 @@
                 <button onclick="closeModal('life-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <img src="images/life_abstract.jpg" alt="Life 抽象画全体" class="w-full h-48 object-cover rounded-lg">
-                <img src="images/life_detail.jpg" alt="Life ディテール" class="w-full h-48 object-cover rounded-lg">
+                <img src="images/life_abstract.jpg" alt="Life 抽象画全体" class="w-full h-48 object-contain rounded-lg bg-stone-100">
+                <img src="images/life_detail.jpg" alt="Life ディテール" class="w-full h-48 object-contain rounded-lg bg-stone-100">
             </div>
             <p class="text-xs text-amber-800 font-medium">2026 / 油絵具, 厚紙, キーキャップ (S15サイズ)</p>
             <p class="text-sm text-stone-700 leading-relaxed">日常生活をテーマに抽象画の制作を二年生洋画の授業最後にしました。「趣味」「学校」「内面」の領域をそれぞれ表現し、厚紙を用いた画面内の切断と、キーキャップなどの立体物を抽象画の中にボンドで取り込む発想を組み込みました。指導教員や友人などから褒められ、二年生最後にとても満足のいくものが作れた思い出深い作品です。</p>
@@ -503,8 +503,8 @@
                 <button onclick="closeModal('pottery-modal')" class="text-stone-400 hover:text-stone-600 font-bold text-xl">&times;</button>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <img src="images/pottery_kobito.jpg" alt="小人の家には 全体" class="w-full h-48 object-cover rounded-lg">
-                <img src="images/pottery_kobito_detail.jpg" alt="制作中・拡大の様子" class="w-full h-48 object-cover rounded-lg">
+                <img src="images/pottery_kobito.jpg" alt="小人の家には 全体" class="w-full h-48 object-contain rounded-lg bg-stone-100">
+                <img src="images/pottery_kobito_detail.jpg" alt="制作中・拡大の様子" class="w-full h-48 object-contain rounded-lg bg-stone-100">
             </div>
             <p class="text-xs text-amber-800 font-medium">2025 / 白鳳, 黒天目</p>
             <p class="text-sm text-stone-700 leading-relaxed">一年生の時のカップハウスが満足できず、それのリベンジとして作ったものです。何度もレンガの表現や、釉薬の違いを調べ、自分にできる表現を試し続けた作品です。陶芸部として最後の作品にしようと決意していた中で、十分な制作ができて非常に満足できました。窓をのぞき込むと、中で手を振る小人が表現されています。</p>
